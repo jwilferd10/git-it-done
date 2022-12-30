@@ -25,6 +25,12 @@ let displayRepos = function(repos, searchTerm) {
     // console.log(repos);
     // console.log(searchTerm);
 
+    // check if api returned any repos
+    if (repos.length === 0) {
+        repoContainerEl.textContent = "No repositories found.";
+        return;
+    }
+
     // clear out content
     repoContainerEl.textContent = "";
 
@@ -71,11 +77,22 @@ let getUserRepos = function(user) {
     let apiUrl = "https://api.github.com/users/" + user + "/repos";
 
     // make request to url
-    fetch(apiUrl).then(function(response) {
-        response.json().then(function(data) {
-            displayRepos(data, user);
-        });
-    });
+    fetch(apiUrl)
+        .then(function(response) {
+            // request was successful
+            if (response.ok) {
+                response.json().then(function(data) {
+                    displayRepos(data, user);
+                });
+            } else {
+                alert("Error: " + response.statusText);
+            }
+        })
+
+       .catch(function(error) {
+            alert("Unable to connect to Github");
+        }); 
+    // end of fetch
 };
 
 userFormEl.addEventListener("submit", formSubmitHandler);
