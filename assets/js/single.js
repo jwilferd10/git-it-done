@@ -1,4 +1,5 @@
 const issuesContainerEl = document.querySelector("#issues-container");
+const limitWarningEl = document.querySelector("#limit-warning");
 
 let getRepoIssues = function(repo) {
     // concatenate the strings with the repo username and repo name passed in the center
@@ -8,10 +9,13 @@ let getRepoIssues = function(repo) {
         // request was successful
         if (response.ok) {
             response.json().then(function(data) {
-                // console.log(data);
-
                 // pass response data to DOM function
                 displayIssues(data);
+
+                // if api has paginated additional issues, display warning
+                if (response.headers.get("Link")) {
+                    displayWarning(repo)
+                }
             });
         } else {
             // response failed
@@ -60,4 +64,18 @@ let displayIssues = function(issues) {
     }
 }
 
-getRepoIssues("jwilferd10/My-Daily-Planner");
+// if issues are being paginated, inform the user
+let displayWarning = function(repo) {
+    // add text to warning container
+    limitWarningEl.textContent = "To see more than 30 issues, visit ";
+    
+    let linkEl = document.createElement("a");
+    linkEl.textContent = "See More Issues on Github.com";
+    linkEl.setAttribute("href", "https://github.com/" + repo + "/issues");
+    linkEl.setAttribute("target", "_blank");
+
+    // append warning message to container
+    limitWarningEl.appendChild(linkEl);
+};
+
+getRepoIssues("facebook/react");
