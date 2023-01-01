@@ -4,13 +4,19 @@ const limitWarningEl = document.querySelector("#limit-warning");
 const repoNameEl = document.querySelector("#repo-name");
 
 let getRepoName = function() {
+    // use document.location to find search (the query parameter)
     let queryString = document.location.search;
 
+    // repoName is the queryString data but split after the =. [1] selects the string (user/repo);
     let repoName = queryString.split("=")[1];
 
-    getRepoIssues(repoName);
-
-    repoNameEl.textContent = repoName;
+    if (repoName) {
+        repoNameEl.textContent = repoName
+        getRepoIssues(repoName);
+    } else {
+        // redirect back to index if repoName is not true
+        document.location.replace("./index.html");
+    }
 }
 
 let getRepoIssues = function(repo) {
@@ -30,8 +36,8 @@ let getRepoIssues = function(repo) {
                 }
             });
         } else {
-            // response failed
-            alert("There was a problem with your request!");
+            // response failed, redirect user back to html.
+            document.location.replace("./index.html");
         }
     });
 };
