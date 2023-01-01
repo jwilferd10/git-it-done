@@ -1,5 +1,17 @@
 const issuesContainerEl = document.querySelector("#issues-container");
 const limitWarningEl = document.querySelector("#limit-warning");
+// connecting from homepage.js 
+const repoNameEl = document.querySelector("#repo-name");
+
+let getRepoName = function() {
+    let queryString = document.location.search;
+
+    let repoName = queryString.split("=")[1];
+
+    getRepoIssues(repoName);
+
+    repoNameEl.textContent = repoName;
+}
 
 let getRepoIssues = function(repo) {
     // concatenate the strings with the repo username and repo name passed in the center
@@ -78,4 +90,5 @@ let displayWarning = function(repo) {
     limitWarningEl.appendChild(linkEl);
 };
 
-getRepoIssues("facebook/react");
+getRepoName();
+// getRepoIssues("facebook/react");
