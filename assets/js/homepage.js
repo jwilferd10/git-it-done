@@ -96,4 +96,26 @@ let getUserRepos = function(user) {
     // end of fetch
 };
 
+let getFeaturedRepos = function(language) {
+    // github api url with language passed in the middle
+    let apiUrl = "https://api.github.com/search/repositories?q=" + language + "+is:featured&sort=help-wanted-issues";
+
+    fetch(apiUrl)
+        .then(function(response) {
+            if (response.ok) {
+                response.json().then(function(data) {
+                    // console.log(data);
+                    displayRepos(data.items, language);
+                });
+            } else {
+                alert("Error: " + response.statusText);
+            }
+        })
+
+        .catch(function(error) {
+            alert("Unable to connect to Github");
+        });
+    // end of fetch
+};
+
 userFormEl.addEventListener("submit", formSubmitHandler);
