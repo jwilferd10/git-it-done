@@ -97,4 +97,3 @@ let displayWarning = function(repo) {
 };
 
 getRepoName();
-// getRepoIssues("facebook/react");
