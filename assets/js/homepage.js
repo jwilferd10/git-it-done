@@ -24,7 +24,7 @@ let formSubmitHandler = function(event) {
 
 let buttonClickHandler = function(event) {
     let language = event.target.getAttribute("data-language");
-    // console.log(language);
+    
     if (language) {
         getFeaturedRepos(language);
 
@@ -34,9 +34,6 @@ let buttonClickHandler = function(event) {
 }
 
 let displayRepos = function(repos, searchTerm) {
-    // console.log(repos);
-    // console.log(searchTerm);
-
     // check if api returned any repos
     if (repos.length === 0) {
         repoContainerEl.textContent = "No repositories found.";
@@ -45,7 +42,6 @@ let displayRepos = function(repos, searchTerm) {
 
     // clear out content
     repoContainerEl.textContent = "";
-
     repoSearchTerm.textContent = searchTerm
 
     // loop over the repos
@@ -116,7 +112,6 @@ let getFeaturedRepos = function(language) {
         .then(function(response) {
             if (response.ok) {
                 response.json().then(function(data) {
-                    // console.log(data);
                     displayRepos(data.items, language);
                 });
             } else {
