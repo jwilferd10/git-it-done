@@ -102,6 +102,10 @@ p {
   max-width: 75%;
 }
 
+#repoLink {
+  text-decoration: inherit;
+}
+
 .app-title {
   font-size: 3rem;
   background-color: var(--primary);
