@@ -116,6 +116,10 @@ p {
   box-shadow: 6px 5px var(--light-dark);
 }
 
+.subtitle {
+  padding-bottom: 10px;
+}
+
 .list-group {
   padding: 0;
   list-style: none;
