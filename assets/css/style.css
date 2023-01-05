@@ -157,14 +157,15 @@ p {
 .card {
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
+  border-radius: 1rem;
+  /* border-radius: var(--border-radius); */
 }
 
 .card-header {
   color: var(--primary);
   background-color: var(--dark);
   padding: 2.5%;
-  border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+  border-radius: calc(0.6rem - 1px) calc(0.6rem - 1px) 0 0;
 }
 
 .card-body {
