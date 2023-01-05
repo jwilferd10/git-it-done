@@ -1,10 +1,10 @@
 # Git It Done
 
-### Text!?! <br>
+### Looking for public repositories and it's active issues? Git-It-Done is here to help with that!
 
 :computer: **Live Deployment:** Link goes here
 
-:computer: **Github Repository:** Link goes here
+:computer: **Github Repository:** https://github.com/jwilferd10/git-it-done
 
 ## :open_file_folder: Table of Contents:
   - [Preview](#camera-preview)
@@ -22,8 +22,7 @@
 
 ## :wave: Description: 
 <p> 
-Filler Text 
-
+Git-It-Done is an application that allows users to search for other accounts on GitHub. When searched you can view an array of public repositories associated with that account. When clicking a specific repository users are brought to a second HTML page and any active Issue and Pull Request will be displayed in a list. Additionally users can use this application to search for active repositories based on a programming language. Finally, when users click on any Issue or Pull Request they will be redirected to it's active GitHub post.
 </p>
   
 ## :book: User Story:
