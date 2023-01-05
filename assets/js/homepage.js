@@ -34,6 +34,8 @@ let buttonClickHandler = function(event) {
         // clear old text
         repoContainerEl.textContent = "";
         languageSelectEl.value = "";
+    } else if (language === "") {
+        return alert("Please select a topic")
     }
 }
 
