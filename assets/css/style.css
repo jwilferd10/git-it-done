@@ -102,6 +102,10 @@ p {
   max-width: 75%;
 }
 
+#repoLink {
+  text-decoration: inherit;
+}
+
 .app-title {
   font-size: 3rem;
   background-color: var(--primary);
@@ -110,6 +114,10 @@ p {
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
+}
+
+.subtitle {
+  padding-bottom: 10px;
 }
 
 .list-group {
