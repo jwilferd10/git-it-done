@@ -22,22 +22,31 @@
       <!-- Search By User -->
       <div class="col-12 col-md-4">
         <div class="card">
-          <h3 class="card-header text-uppercase">Search By User</h3>
+          <h3 class="card-header text-uppercase">👥 Search By User</h3>
           <form id="user-form" class="card-body">
             <label class="form-label" for="username">Username</label>
             <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-            <button type="submit" class="btn">Get User</button>
+            <button type="submit" class="btn">🔍Get User</button>
           </form>
         </div>
         
         <!-- Search By Topic -->
         <div class="card">
-          <h3 class="card-header text-uppercase">Search By Topic</h3>
-          <div id="language-buttons" class="card-body">
-            <button data-language="javascript" class="btn">JavaScript</button>
-            <button data-language="html" class="btn">HTML</button>
-            <button data-language="css" class="btn">CSS</button>
-          </div>
+          <h3 class="card-header text-uppercase">📂 Search By Topic</h3>
+
+          <form class="card-body">
+            <select id="#languageSelect" class="form-input">
+              <option value="" disabled selected class="btn">Select A Language</option>
+              <option value="javascript" class="btn">JavaScript</option>
+              <option value="html" class="btn">HTML</option>
+              <option value="css" class="btn">CSS</option>
+              <option value="python" class="btn">Python</option>
+              <option value="java" class="btn">Java</option>
+              <option value="c++" class="btn">C++</option>
+              <option value="c#" class="btn">C#</option>
+            </select>
+            <button id="language-submit" class="btn"> 🔍Search</button>
+          </form>
         </div>
       </div>
 
