@@ -42,7 +42,7 @@ let displayRepos = function(repos, searchTerm) {
 
     // clear out content
     repoContainerEl.textContent = "";
-    repoSearchTerm.textContent = searchTerm
+    repoSearchTerm.textContent = searchTerm;
 
     // loop over the repos
     for (let i = 0; i < repos.length; i++) {
@@ -112,7 +112,7 @@ let getFeaturedRepos = function(language) {
         .then(function(response) {
             if (response.ok) {
                 response.json().then(function(data) {
-                    displayRepos(data.items, language);
+                    displayRepos(data.items, language.toUpperCase());
                 });
             } else {
                 alert("Error: " + response.statusText);
