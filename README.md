@@ -1,6 +1,6 @@
-# Git It Done
+# :clipboard: Git-It-Done :clipboard:
 
-### Looking for public repositories and it's active issues? Git-It-Done is here to help with that!
+#### Looking for public repositories and their active issues? Look no further, Git-It-Done is here to help you get it done. :wink:
 
 :computer: **Live Deployment:** https://jwilferd10.github.io/git-it-done/
 
@@ -43,6 +43,20 @@ Main Resources:
 ### Install:
 - You can do this by clicking the *GREEN* button above and you can download it by ZIP or copy the SSH!
 ### Usage:
+There's two ways you can use this app:
+- Fill the text area out with a VALID GitHub account
+- Click on a topic from the form select
+<br>
+Click any button with a :mag: to start your search.
+<br>
+<br>
+After a second a list of generated repositories should appear on the screen
+<br>
+<br>
+By clicking on a specific repository, you will see a new page featuring all of it's Issues and Pull Request
+<br>
+<br>
+Clicking any issue or pull request will bring you to that post here in GitHub.
 
 ## :paperclip: Contributors
 - UCLA Coding Bootcamp (Setup of main project)
