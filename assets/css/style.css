@@ -307,6 +307,21 @@ p {
 }
 
 /* col-sm */
+@media screen and (max-width: 359px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 15px;
+    max-width: 80%;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .col-sm-1 {
     flex: 0 0 calc(100% * 1 / 12 - 2%);
