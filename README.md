@@ -2,7 +2,7 @@
 
 ### Looking for public repositories and it's active issues? Git-It-Done is here to help with that!
 
-:computer: **Live Deployment:** Link goes here
+:computer: **Live Deployment:** https://jwilferd10.github.io/git-it-done/
 
 :computer: **Github Repository:** https://github.com/jwilferd10/git-it-done
 
