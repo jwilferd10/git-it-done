@@ -347,6 +347,13 @@ p {
   }
 }
 
+@media (max-width: 433px) {
+  .singleTitle {
+    width: 22.875rem;
+    padding: 5px;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .col-sm-1 {
     flex: 0 0 calc(100% * 1 / 12 - 2%);
@@ -447,11 +454,11 @@ p {
   .col-md-12 {
     flex: 0 0 100%;
   }
+}
 
-  @media screen and (max-width:844) {
-    .app-title {
-      font-size: 2rem;
-    }
+@media (max-width: 844px) {
+  .singleTitle {
+    font-size: 22px;
   }
 }
 
