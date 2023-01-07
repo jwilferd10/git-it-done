@@ -56,6 +56,7 @@ p {
   background-color: var(--light-dark);
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
+  overflow: hidden;
 }
 
  .btn:hover {
@@ -63,6 +64,24 @@ p {
   background-color: var(--tertiary);
   transform: translate(0, 0);
   box-shadow: 2px 2px var(--dark);
+}
+
+.btn:after {
+  background: #fff ;
+  content: "";
+  height: 155px;
+  left: -6rem;
+  opacity: .1;
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+  transform: rotate(35deg);
+}
+
+.btn:hover:after {
+  left: 97%;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .btn-inline {
@@ -133,10 +152,13 @@ p {
   color: var(--primary);
   text-decoration: none;
   box-shadow: 1px 3px 7px black;
+  transition: 200ms
 }
 
 .list-item:hover {
   background-color: var(--dark);
+  opacity: .9;
+  transition: 200ms;
 }
 
 .status-icon {
