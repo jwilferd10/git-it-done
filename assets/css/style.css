@@ -349,8 +349,20 @@ p {
 
 @media (max-width: 433px) {
   .singleTitle {
-    width: 22.875rem;
+    width: 77%;
+    font-size: 20px;
     padding: 5px;
+    margin-left: 2rem;
+    box-shadow: 4px 5px var(--light-dark);
+  }
+
+  .list-group {
+    margin: 20px 15px;
+  }
+
+  .btn-back {
+    margin-left: 34%;
+    box-shadow: 2px 3px var(--secondary);
   }
 }
 
