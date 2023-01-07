@@ -1,8 +1,8 @@
-# Git It Done
+# :clipboard: Git-It-Done :clipboard:
 
-### Looking for public repositories and it's active issues? Git-It-Done is here to help with that!
+#### Looking for public repositories and their active issues? Look no further, Git-It-Done is here to help you get it done. :wink:
 
-:computer: **Live Deployment:** Link goes here
+:computer: **Live Deployment:** https://jwilferd10.github.io/git-it-done/
 
 :computer: **Github Repository:** https://github.com/jwilferd10/git-it-done
 
@@ -23,6 +23,11 @@
 ## :wave: Description: 
 <p> 
 Git-It-Done is an application that allows users to search for other accounts on GitHub. When searched you can view an array of public repositories associated with that account. When clicking a specific repository users are brought to a second HTML page and any active Issue and Pull Request will be displayed in a list. Additionally users can use this application to search for active repositories based on a programming language. Finally, when users click on any Issue or Pull Request they will be redirected to it's active GitHub post.
+
+Git-It-Done was borught to life through JavaScript and GitHub's API, this application was the first time I utilized third-party API's within a project and was a part of my course at the UCLA Coding Bootcamp. However feeling the need to go further and proudly call this app my own, I have extended and improve upon this app by adding new features and visual changes that weren't apart of the base project.
+
+To further note, the base bootcamp project ended at commit 39168de68f29a98bc757df8d5fcd1d2d95a9fb29, anything after are ammendments that I personally made. My specific changes targetted the 'Search By Topic', users now use a form select to choose a variety of topics to search from. Additionally my changes were focused on the UI of the app and it's reliability on mobile devices. Big thanks to the UCLA Coding Bootcamp for their direction, thank YOU for checking Git-It-Done out - I hope you enjoy it and happy coding!
+
 </p>
   
 ## :book: User Story:
@@ -38,6 +43,20 @@ Main Resources:
 ### Install:
 - You can do this by clicking the *GREEN* button above and you can download it by ZIP or copy the SSH!
 ### Usage:
+There's two ways you can use this app:
+- Fill the text area out with a VALID GitHub account
+- Click on a topic from the form select
+<br>
+Click any button with a :mag: to start your search.
+<br>
+<br>
+After a second a list of generated repositories should appear on the screen
+<br>
+<br>
+By clicking on a specific repository, you will see a new page featuring all of it's Issues and Pull Request
+<br>
+<br>
+Clicking any issue or pull request will bring you to that post here in GitHub.
 
 ## :paperclip: Contributors
 - UCLA Coding Bootcamp (Setup of main project)
