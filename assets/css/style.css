@@ -80,7 +80,7 @@ p {
 }
 
 .btn:hover:after {
-  left: 97%;
+  left: 97.5%;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
