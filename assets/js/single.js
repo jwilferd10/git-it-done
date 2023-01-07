@@ -54,7 +54,7 @@ let displayIssues = function(issues) {
     for (let i = 0; i < issues.length; i++) {
        // create a link element to take the users to singular issue on GitHub
        var issueEl = document.createElement("a");
-       issueEl.classList = "list-item flex-row justify-space-between align-center";
+       issueEl.classList = "list-item flex-row justify-space-between align-center btn";
        issueEl.setAttribute("href", issues[i].html_url);
        issueEl.setAttribute("target", "_blank"); 
 

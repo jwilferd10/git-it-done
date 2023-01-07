@@ -43,7 +43,6 @@ p {
 }
 
  .btn {
-  font-size: 1.3rem;
   text-decoration:none;
   padding: 6px 5px;
   width: 100%;
@@ -69,19 +68,19 @@ p {
 .btn:after {
   background: #fff ;
   content: "";
-  height: 155px;
+  height: 190px;
   left: -6rem;
   opacity: .1;
   position: absolute;
   top: -50px;
   width: 50px;
-  transition: all 850ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transform: rotate(35deg);
 }
 
 .btn:hover:after {
   left: 97.5%;
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .btn-inline {
@@ -109,6 +108,10 @@ p {
   background-color: var(--tertiary);
   transform: translate(0, 0);
   box-shadow: 2px 2px var(--dark);
+}
+
+.searchStyle {
+  font-size: 1.3rem;
 }
 
 .hero {
