@@ -31,6 +31,21 @@ To further note, the base bootcamp project ended at commit 39168de68f29a98bc757d
 </p>
   
 ## :book: User Story:
+**AS A developer searching for public repositories**
+- I WANT an application that finds public repositories with their associated issues
+- SO THAT I can learn more about or contribute to that app
+
+**GIVEN I need to search through GitHub**
+- WHEN I open the app
+	- THEN I am presented with a page that has two search options
+- WHEN I search for a user
+	- THEN I am presented with a list of the users public repositories
+- WHEN I select a topic
+	- THEN I am presented with a list of repositories tagged with that topic
+- WHEN I click on a repository 
+	- THEN I am brought to a second page containing a list of all the repositories' issues/pull-requests
+- WHEN I click on an issue/pull-request
+	- THEN I'm brought to it's link on GitHub
 
 ## :floppy_disk: Resources Used:
 Main Resources:
