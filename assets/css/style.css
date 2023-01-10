@@ -337,17 +337,19 @@ p {
     font-size: 2rem;
   }
 
-  .hero p {
-    font-size: 15px;
-    max-width: 80%;
-  }
-
   .subtitle {
     text-align: center;
   }
 }
 
 @media (max-width: 433px) {
+  .indexHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Single repo html */
   .singleTitle {
     width: 77%;
     font-size: 20px;
@@ -363,6 +365,15 @@ p {
   .btn-back {
     margin-left: 34%;
     box-shadow: 2px 3px var(--secondary);
+  }
+
+  .hero p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
   }
 }
 
