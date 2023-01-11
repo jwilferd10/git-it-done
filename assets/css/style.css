@@ -132,6 +132,10 @@ p {
   padding-bottom: 5px;
 }
 
+#singleCardHeader {
+  padding: 1.5%;
+}
+
 #repo-name {
   padding-top: 10px;
 }
@@ -397,6 +401,10 @@ p {
 
   #limit-warning {
     padding: 0px 0px 15px 8px;
+  }
+
+  #singleCardHeader {
+    padding: 5.5%;
   }
 }
 
