@@ -68,7 +68,7 @@ p {
 .btn:after {
   background: #fff ;
   content: "";
-  height: 190px;
+  height: 210px;
   left: -6rem;
   opacity: .1;
   position: absolute;
