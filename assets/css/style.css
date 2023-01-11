@@ -182,6 +182,10 @@ p {
   transition: 200ms
 }
 
+.repoGitHubLink {
+  padding-left: 7px;
+}
+
 .list-item:hover {
   background-color: var(--dark);
   opacity: .9;
@@ -408,7 +412,7 @@ p {
   }
 
   #limit-warning {
-    padding: 0px 0px 15px 8px;
+    padding: 0px 5px 15px 0px;
   }
 
   #singleCardHeader {
