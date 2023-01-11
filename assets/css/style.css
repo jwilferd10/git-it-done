@@ -136,6 +136,10 @@ p {
   padding: 1.5%;
 }
 
+#singleCard {
+  margin: 15px 0 15px 0;
+}
+
 #repo-name {
   padding-top: 10px;
 }
