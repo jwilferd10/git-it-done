@@ -132,6 +132,10 @@ p {
   padding-bottom: 5px;
 }
 
+#repo-name {
+  padding-top: 10px;
+}
+
 #repoLink {
   text-decoration: inherit;
 }
@@ -353,9 +357,9 @@ p {
     text-align: center;
   }
 
-  /* .repoHeader {
-
-  } */
+  .repoHeader {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 433px) {
