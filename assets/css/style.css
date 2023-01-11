@@ -377,6 +377,10 @@ p {
     align-items: center;
   }
 
+  .repoHeader {
+    font-size: 1.4rem;
+  }
+
   .list-group {
     margin: 20px 15px;
   }
