@@ -179,7 +179,7 @@ p {
   color: var(--primary);
   text-decoration: none;
   box-shadow: 0.5px 3px 7px black;
-  transition: 200ms
+  transition: 200ms;
 }
 
 .repoGitHubLink {
@@ -391,6 +391,10 @@ p {
 
   .list-group {
     margin: 20px 15px;
+  }
+
+  .list-item {
+    width: 102%;
   }
 
   .btn-back {
