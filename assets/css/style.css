@@ -124,6 +124,10 @@ p {
   max-width: 75%;
 }
 
+.singleHero {
+  padding-bottom: 50px;
+}
+
 #repoLink {
   text-decoration: inherit;
 }
@@ -336,7 +340,7 @@ p {
 }
 
 /* col-sm */
-@media screen and (max-width: 364px) {
+@media (max-width: 364px) {
   .app-title {
     font-size: 2rem;
   }
@@ -348,10 +352,6 @@ p {
   /* .repoHeader {
 
   } */
-
-  .contentWrapper {
-    padding: 0.5px;
-  }
 }
 
 @media (max-width: 433px) {
@@ -363,15 +363,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  /* Single repo html */
-  .singleTitle {
-    width: 77%;
-    font-size: 20px;
-    padding: 5px;
-    margin-left: 2rem;
-    box-shadow: 4px 5px var(--light-dark);
   }
 
   .list-group {
@@ -393,7 +384,7 @@ p {
   }
 
   .contentWrapper {
-    padding: 5px;
+    padding: 0.5px;
   }
 
   #limit-warning {
@@ -500,12 +491,6 @@ p {
 
   .col-md-12 {
     flex: 0 0 100%;
-  }
-}
-
-@media (max-width: 844px) {
-  .singleTitle {
-    font-size: 22px;
   }
 }
 
