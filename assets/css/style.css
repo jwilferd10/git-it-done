@@ -142,6 +142,10 @@ p {
   padding-bottom: 10px;
 }
 
+.contentWrapper {
+  padding: 15px;
+}
+
 .list-group {
   padding: 0;
   list-style: none;
@@ -332,7 +336,7 @@ p {
 }
 
 /* col-sm */
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 364px) {
   .app-title {
     font-size: 2rem;
   }
@@ -340,9 +344,21 @@ p {
   .subtitle {
     text-align: center;
   }
+
+  .repoHeader {
+
+  }
+
+  .contentWrapper {
+    padding: 0.5px;
+  }
 }
 
 @media (max-width: 433px) {
+  .fab {
+    padding-right: 10px;
+  }
+
   .indexHeader {
     display: flex;
     justify-content: center;
@@ -374,6 +390,14 @@ p {
 
   .subtitle {
     text-align: center;
+  }
+
+  .contentWrapper {
+    padding: 5px;
+  }
+
+  #limit-warning {
+    padding: 0px 0px 15px 8px;
   }
 }
 
