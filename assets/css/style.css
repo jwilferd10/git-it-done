@@ -359,7 +359,6 @@ p {
   flex: 0 0 100%;
 }
 
-/* col-sm */
 @media (max-width: 364px) {
   .app-title {
     font-size: 2.4rem;
@@ -371,6 +370,10 @@ p {
 
   .repoHeader {
     font-size: 1.7rem;
+  }
+
+  .btn-back {
+    margin-left: 31.5%;
   }
 }
 
@@ -424,6 +427,7 @@ p {
   }
 }
 
+/* col-sm */
 @media screen and (min-width: 640px) {
   .col-sm-1 {
     flex: 0 0 calc(100% * 1 / 12 - 2%);
