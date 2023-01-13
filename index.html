@@ -21,6 +21,7 @@
     <main class="flex-row justify-space-between">
       <!-- Search By User -->
       <div class="col-12 col-md-4">
+        <!-- Search Form -->
         <div class="card">
           <h3 class="card-header text-uppercase">👥 Search By User</h3>
           <form id="user-form" class="card-body">
@@ -34,7 +35,9 @@
         <div class="card">
           <h3 class="card-header text-uppercase">📂 Search By Topic</h3>
 
+          <!-- Form Select -->
           <form class="card-body">
+            <!-- Language Options  -->
             <select id="#languageSelect" class="form-input">
               <option value="" disabled selected class="btn">Select a Language</option>
               <option value="javascript" class="btn">JavaScript</option>
@@ -50,8 +53,14 @@
         </div>
       </div>
 
+      <!-- Repo Display -->
       <div class="col-12 col-md-8">
-        <h2 class="subtitle">Showing Repositories For: <span id="repo-search-term"></span></h2>
+        <!-- Repo/Language Name -->
+        <h2 class="subtitle">Showing Repositories For: 
+          <span id="repo-search-term"> </span>
+        </h2>
+        
+        <!-- List of Repos -->
         <div id="repos-container" class="list-group"></div>
       </div>
     </main>
