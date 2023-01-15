@@ -18,8 +18,8 @@
 
 ## :camera: Preview:
 <p float="left">
-  <img src= "assets/img/DesktopApp.png"  width="79%") />
-  <img src= "assets/img/420MobileApp.png" width="20%") />
+  <img src= "assets/img/DesktopApp.png") />
+  <img src= "assets/img/420MobileApp.png" width="30%") />
 </p>
 
 ## :movie_camera: Demo:
