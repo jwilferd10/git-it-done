@@ -23,6 +23,8 @@
 </p>
 
 ## :movie_camera: Demo:
+![image](assets/img/desktop.gif)
+![image](assets/img/420mobile.gif)
 
 ## :wave: Description: 
 <p> 
